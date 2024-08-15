@@ -2,44 +2,63 @@
 
 ## Objective
 
-The Wireshark network analysis project aimed to provide hands-on experience in capturing and analyzing network traffic using Wireshark, a leading network protocol analyzer. The main goal was to understand various network protocols, identify anomalies, and enhance skills in packet analysis, which are critical in the field of cybersecurity.
+The objective of this project was to utilize Wireshark as a powerful network protocol analyzer to capture, filter, and analyze network traffic. The goal was to enhance the understanding of how data travels through a network, recognize patterns, detect anomalies, and identify potential security threats.
 
 ### Skills Learned
 
-- In-depth understanding of packet structure and network protocols (TCP/IP, UDP, HTTP, etc.).
-- Proficiency in using Wireshark for real-time network traffic capture and analysis.
-- Ability to identify and troubleshoot network issues and security vulnerabilities through packet inspection.
-- Enhanced skills in recognizing malicious traffic patterns and indicators of compromise (IoCs).
-- Development of analytical skills for interpreting complex data from network packets.
+- Proficiency in using Wireshark for capturing live network traffic.
+- Ability to apply filtering techniques to isolate relevant packets for analysis.
+- Understanding of various network protocols and their normal behavior.
+- Skills in identifying malicious traffic and potential indicators of compromise (IoCs).
+- Enhanced analytical skills for interpreting packet data and deriving meaningful insights.
 
 ### Tools Used
 
-- Wireshark: For capturing and analyzing live network traffic.
-- TCPdump: For command-line packet capturing to complement Wireshark analysis.
-- Network Protocol Analyzers: To evaluate and dissect various protocols utilized in real-world scenarios.
+- Wireshark: A leading network protocol analyzer for capturing and inspecting packets in real-time.
+- Tcpdump: A command-line packet analyzer for capturing traffic for later analysis with Wireshark.
+- Network Protocols: Familiarity with protocols such as TCP, UDP, HTTP, and DNS for comprehensive traffic analysis.
 
 ## Steps
 
 ### 1. Capture Network Traffic
+Start Wireshark and select the appropriate network interface to capture traffic. Use filters to focus on specific protocols or IP addresses.
 
-- Begin by setting up Wireshark to capture traffic on the appropriate network interface. This involves selecting the correct interface and starting the capture process.
+Ref 1: Wireshark Capture Interface
 
-
-### 2. Analyze Captured Packets
-
-- After capturing traffic, apply filters to isolate specific protocols or types of traffic (e.g., HTTP, DNS). This helps in narrowing down the focus on relevant packets.
+Wireshark Capture Interface
 
 
-### 3. Identify Anomalies
+### 2. Apply Filters
+Utilize display filters to narrow down packets of interest, such as filtering by protocol (e.g., http or tcp).
 
-- Look for unusual patterns or unexpected traffic flows that could indicate potential security threats. This could include spikes in traffic volume or connections to unusual IP addresses.
+Ref 2: Applying Filters in Wireshark
+
+Applying Filters in Wireshark
 
 
-### 4. Export and Report Findings
+### 3. Analyze Captured Packets
+Inspect individual packets to understand the details, including source and destination addresses, protocols used, and payload data.
 
-- Document the findings by exporting relevant packet captures and creating a report summarizing the analysis. This included details about identified anomalies and suggested remediation steps.
+Ref 3: Packet Analysis
 
+Packet Analysis
+
+
+### 4. Identify Anomalies
+Look for unusual patterns or spikes in traffic that may indicate suspicious activity or potential cybersecurity threats.
+
+Ref 4: Identifying Anomalies
+
+Identifying Anomalies
+
+
+### 5. Document Findings
+Record observations and findings from the analysis to create a comprehensive report detailing any identified security concerns or anomalies.
+
+Ref 5: Documenting Findings
+
+Documenting Findings
 
 ## Conclusion
 
-By completing this project, I have strengthened my ability to utilize Wireshark effectively for network analysis, which is a vital skill in the cybersecurity domain.
+This project not only provided practical experience with network analysis tools but also reinforced critical cybersecurity concepts essential for identifying and mitigating threats in real-world environments.
