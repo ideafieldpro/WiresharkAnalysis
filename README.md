@@ -21,43 +21,45 @@ The objective of this project was to utilize Wireshark as a powerful network pro
 ## Steps
 
 ### 1. Capture Network Traffic
-Start Wireshark and select the appropriate network interface to capture traffic. Use filters to focus on specific protocols or IP addresses.
+- Start Wireshark and select the appropriate network interface to capture traffic.
+  - Launched Wireshark and selected the appropriate network interface (e.g., Wi-Fi or Ethernet) to start capturing packets. Clicked on the interface and then clicked the "Start Capturing Packets" button.
 
-Ref 1: Wireshark Capture Interface
+- Findings: After capturing packets for a designated time, I observed traffic consisting of various protocols such as TCP, UDP, ARP, and ICMP. This initial capture set the stage for further analysis.
 
-Wireshark Capture Interface
-
+---
 
 ### 2. Apply Filters
-Utilize display filters to narrow down packets of interest, such as filtering by protocol (e.g., http or tcp).
+- Use filters to focus on specific protocols or IP addresses.
+  1. Filter for HTTP Traffic:
+     ```bash
+     http
+  2. Filter for DNS Queries:
+     ```bash
+     dns
 
-Ref 2: Applying Filters in Wireshark
-
-Applying Filters in Wireshark
-
+---
 
 ### 3. Analyze Captured Packets
-Inspect individual packets to understand the details, including source and destination addresses, protocols used, and payload data.
+- Inspect individual packets to understand the details, including source and destination addresses, protocols used, and payload data.
+   - Follow TCP Stream: Right-click on a TCP packet and select "Follow" > "TCP Stream" to view the entire conversation between two hosts.
 
-Ref 3: Packet Analysis
+- Findings: While analyzing an HTTP stream, I discovered a successful login attempt with credentials exposed in plain text. This highlighted a significant security risk.
 
-Packet Analysis
-
+---
 
 ### 4. Identify Anomalies
-Look for unusual patterns or spikes in traffic that may indicate suspicious activity or potential cybersecurity threats.
+- Look for unusual patterns or spikes in traffic that may indicate suspicious activity or potential cybersecurity threats.
+   - Protocol Hierarchy Statistics: Accessed via Statistics > Protocol Hierarchy to visualize the distribution of protocols present in the capture.
 
-Ref 4: Identifying Anomalies
+- Findings: During the analysis, I noticed an unexpected spike in UDP traffic at certain times, suggesting possible unauthorized broadcasts or DDoS activity targeting specific services.
 
-Identifying Anomalies
-
+---
 
 ### 5. Document Findings
-Record observations and findings from the analysis to create a comprehensive report detailing any identified security concerns or anomalies.
+- Record observations and findings from the analysis to create a comprehensive report detailing any identified security concerns or anomalies. This included:
+   - A summary of detected security threats (e.g., exposure of sensitive information).
+   - Recommendations for mitigating risks such as enforcing HTTPS for web applications and implementing intrusion detection systems.
 
-Ref 5: Documenting Findings
-
-Documenting Findings
 
 ## Conclusion
 
